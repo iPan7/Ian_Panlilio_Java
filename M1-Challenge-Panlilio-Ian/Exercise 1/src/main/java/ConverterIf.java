@@ -1,4 +1,4 @@
-public class ConverterIf  implements Converter{
+public class ConverterIf implements Converter{
     @Override
     public String convertMonth(int monthNumber) {
         int i = monthNumber;

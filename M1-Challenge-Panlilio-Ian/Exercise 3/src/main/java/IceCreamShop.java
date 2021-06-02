@@ -13,6 +13,7 @@ public class IceCreamShop {
         price = getPrice();
         return "The number of scoops is " + numberScoops + ", " + "the flavor is " + flavor + ", " + "the container type is a " + containerType + ", " + "and the price is " + "$" + price;
     }
+
     public int getNumberScoops() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the number of scoops you would like.");
