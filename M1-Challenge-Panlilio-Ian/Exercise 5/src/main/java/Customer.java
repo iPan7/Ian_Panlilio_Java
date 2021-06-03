@@ -1,33 +1,18 @@
 public class Customer {
-        private String firstName;
-        private String lastName;
+        private Profile profile;
         private Email email;
         private PhoneNumber phoneNumber;
-        private ShippingAddress shippingAddress;
-        private BillingAddress billingAddress;
-        private boolean isRewardsMember;
+        private Address address;
 
-        public Customer(String firstName, String lastName, Email email, PhoneNumber phoneNumber, ShippingAddress shippingAddress, BillingAddress billingAddress, boolean isRewardsMember) {
-                this.firstName = firstName;
-                this.lastName = lastName;
+        public Customer(Profile profile, Email email, PhoneNumber phoneNumber,  Address address) {
+                this.profile = profile;
                 this.email = email;
                 this.phoneNumber = phoneNumber;
-                this.shippingAddress = shippingAddress;
-                this.billingAddress = billingAddress;
-                this.isRewardsMember = isRewardsMember;
-                System.out.println("----------------------------");
-                System.out.println("First Name: " + firstName);
-                System.out.println("Last Name: " + lastName);
-                System.out.println("Rewards Member: " + isRewardsMember);
-
+                this.address = address;
         }
 
-        public String getFirstName() {
-                return firstName;
-        }
-
-        public String getLastName() {
-                return lastName;
+        public Profile getProfile() {
+                return profile;
         }
 
         public Email getEmail() {
@@ -38,15 +23,12 @@ public class Customer {
                 return phoneNumber;
         }
 
-        public ShippingAddress getShippingAddress() {
-                return shippingAddress;
+        public Address getShippingAddress() {
+                return address;
         }
 
-        public BillingAddress getBillingAddress() {
-                return billingAddress;
+        public Address getBillingAddress() {
+                return address;
         }
 
-        public boolean isRewardsMember() {
-                return isRewardsMember;
-        }
 }
