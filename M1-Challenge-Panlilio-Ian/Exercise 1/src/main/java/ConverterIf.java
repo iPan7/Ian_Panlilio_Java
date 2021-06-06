@@ -1,5 +1,4 @@
 public class ConverterIf implements Converter{
-    @Override
     public String convertMonth(int monthNumber) {
         int i = monthNumber;
         String monthString = "";
@@ -33,7 +32,6 @@ public class ConverterIf implements Converter{
         return "ConverterIf: " + monthString;
     }
 
-    @Override
     public String convertDay(int dayNumber) {
         int i = dayNumber;
         String dayString = "";

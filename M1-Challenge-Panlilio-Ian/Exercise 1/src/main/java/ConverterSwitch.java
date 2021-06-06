@@ -1,5 +1,5 @@
 public class ConverterSwitch implements Converter{
-    @Override
+
     public String convertMonth(int monthNumber) {
         String monthString = "";
         switch (monthNumber) {
@@ -44,7 +44,6 @@ public class ConverterSwitch implements Converter{
         }
         return "ConverterSwitch: " + monthString;
     }
-    @Override
     public String convertDay(int dayNumber) {
         String dayString = "";
         switch (dayNumber) {
